@@ -74,6 +74,9 @@
 							<inputSpec>
 								${project.basedir}/src/main/resources/openapi/specs/petstore.yaml
 							</inputSpec>
+							<templateDirectory>
+								${project.basedir}/src/main/resources/openapi/templates
+							</templateDirectory>
 							<generatorName>spring</generatorName>
 							<apiPackage>sk.matusko.tutorial.openapicustomvalidations.api</apiPackage>
 							<modelPackage>sk.matusko.tutorial.openapicustomvalidations.model</modelPackage>

@@ -18,9 +18,10 @@ paths:
           in: query
           description: How many items to return at one time (max 100)
           required: true
+          x-constraints: "@EvenLong"
           schema:
             type: integer
-            format: int32
+            format: int64
       responses:
         '200':
           description: A paged array of pets

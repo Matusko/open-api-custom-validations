@@ -14,7 +14,7 @@ import java.util.List;
 public class PetsController implements PetsApi {
 
     @Override
-    public ResponseEntity<List<Pet>> listPets(Integer limit) {
+    public ResponseEntity<List<Pet>> listPets(Long limit) {
 
         List<Pet> petList = new ArrayList<>();
         petList.add(new Pet().id(1L).name("Bobo"));
