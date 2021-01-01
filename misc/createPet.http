@@ -1,5 +1,8 @@
 POST http://localhost:8080/pets
 Content-Type: application/json
 
-
-
+{
+  "id":180,
+  "name":"Bobo",
+  "tag":null
+}

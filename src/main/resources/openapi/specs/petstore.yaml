@@ -45,6 +45,12 @@ paths:
       operationId: createPets
       tags:
         - pets
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
       responses:
         '201':
           description: Null response
@@ -91,6 +97,7 @@ components:
         id:
           type: integer
           format: int64
+          x-constraints: "@EvenLong"
         name:
           type: string
         tag:

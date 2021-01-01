@@ -23,7 +23,7 @@ public class PetsController implements PetsApi {
     }
 
     @Override
-    public ResponseEntity<Void> createPets() {
+    public ResponseEntity<Void> createPets(Pet pet) {
         return new ResponseEntity<>(HttpStatus.CREATED);
 
     }
